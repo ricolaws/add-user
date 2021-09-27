@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: ivory;
+  line-height: 2.1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(rgb(197, 218, 226), rgb(197, 160, 168));
+  filter: drop-shadow(12px 12px 24px papayawhip);
+}
+
+body.light {
+  background: linear-gradient(rgb(176, 195, 202), rgb(197, 160, 168));
+  filter: drop-shadow(6px 6px 16px rgb(145, 156, 156));
+}
+
+body.dark {
+  background: linear-gradient(rgb(68, 91, 102), rgb(138, 110, 116));
+  filter: drop-shadow(6px 6px 16px papayawhip) invert(99%) hue-rotate(188deg)
+    contrast(150%) brightness(1) saturate(120%);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding-top: 1rem;
+}
+
+.main-header h1 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: wavy overline;
+  text-decoration-thickness: 10%;
+}
+
+/* .container {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+
+  flex-direction: column;
+} */
+
+.user-form {
+  width: 550px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.user-form input {
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 00.3rem;
+}
+
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.25);
+  backdrop-filter: blur(2px);
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  width: 400px;
+  height: 300px;
+  z-index: 2;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(rgb(197, 218, 226), rgb(197, 160, 168));
+  color: black;
+  letter-spacing: 0.8rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.modal-body {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.modal-text {
+  display: block;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+}
